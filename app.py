@@ -58,10 +58,10 @@ def getvalue():
             if wordd==7:
                 break
 
-        # for i in range(18):
-        #     for j in range(18):
-        #         while(Arr[i][j]=="."):
-        #             Arr[i][j]=random.choice(B)
+        for i in range(18):
+            for j in range(18):
+                while(Arr[i][j]=="."):
+                    Arr[i][j]=random.choice(B)
                 
         df=pd.DataFrame(Arr)
     else:
