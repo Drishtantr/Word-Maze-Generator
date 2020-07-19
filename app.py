@@ -39,17 +39,21 @@ def getvalue():
             ale=len(a)
             count=0
             maze-=1
+            if i%2==0:
+                put=maze
+            else:
+                put=i             
             for l in range(18):
-                if Arr[maze][l]==".":
+                if Arr[put][l]==".":
                     count+=1
                 else:
                     break
             if count>=ale:
                 wordd+=1
                 dif=count-ale
-                cho=random.choice(range(dif+1))
+                cho=random.choice(range(dif+1))  
                 for j in range(ale):
-                    Arr[maze][j+cho]=word[sam][j]
+                    Arr[put][j+cho]=word[sam][j]
             if wordd==7:
                 break
 
