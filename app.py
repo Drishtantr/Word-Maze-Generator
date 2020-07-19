@@ -39,10 +39,11 @@ def getvalue():
             ale=len(a)
             count=0
             maze-=1
-            if i%2==0:
-                put=maze
-            else:
-                put=i             
+            put=random.choice([maze, i])
+            # if i%2==0:
+            #     put=maze
+            # else:
+            #     put=i             
             for l in range(18):
                 if Arr[put][l]==".":
                     count+=1
@@ -57,10 +58,10 @@ def getvalue():
             if wordd==7:
                 break
 
-        for i in range(18):
-            for j in range(18):
-                while(Arr[i][j]=="."):
-                    Arr[i][j]=random.choice(B)
+        # for i in range(18):
+        #     for j in range(18):
+        #         while(Arr[i][j]=="."):
+        #             Arr[i][j]=random.choice(B)
                 
         df=pd.DataFrame(Arr)
     else:
