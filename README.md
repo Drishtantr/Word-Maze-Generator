@@ -1,5 +1,5 @@
 # Word Maze Generator
-A web app built using Python Flask and other Web Techs. It accepts 15 words and generates a 18x18 crossword puzzle of the words!
+A web app built using Python Flask and other Web Technologies. It accepts 15 words and generates an 18x18 crossword puzzle of the words!
 
 ## Table of Contents
 
